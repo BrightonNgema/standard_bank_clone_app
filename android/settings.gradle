@@ -1,0 +1,3 @@
+rootProject.name = 'standard_bank_clone'
+
+include ':app'
