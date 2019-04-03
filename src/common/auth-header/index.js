@@ -12,7 +12,7 @@ const AuthHeader = ({onBack, headerName}) => (
             </Button>
         </Left>
         <Body style={{flex: 3}}>
-            <Text style={{color:'#fff', fontSize:18,}}>{headerName}</Text>
+            <Text style={{color:'#fff', fontSize:18}}>{headerName}</Text>
         </Body>
         <Right />
     </Header>
