@@ -1,23 +1,16 @@
-
 import React, {Component} from 'react';
-import {View, StyleSheet, Text, ImageBackground, Image, TouchableOpacity, StatusBar} from 'react-native';
-import {icons} from 'assets'
+import {StyleSheet, Text, ImageBackground, Image, TouchableOpacity, StatusBar} from 'react-native';
+import {icons , images} from 'assets'
 import { BottomIcons } from './BottomIcons';
-
-const {contact, graph, logo, wallet} = icons
-const wallpaper = "https://images.unsplash.com/photo-1500368979884-522eb3985d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80"
-const wallpaper2= "https://images.unsplash.com/photo-1500458124747-f31b1e140de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+const {logo} = icons
 
 class Login extends Component{
 
-
-  navigate = (nav) => {
-    this.props.navigation.navigate(nav)
-  }
+  navigate = (nav) => this.props.navigation.navigate(nav)
 
   render() {
     return (
-      <ImageBackground style={styles.container} source={{uri:wallpaper}}>
+      <ImageBackground style={styles.container} source={images.background}>
         <StatusBar barStyle="light-content"/>
         <Image source={logo} style={{height:80, width:80, marginTop:'20%'}} resizeMode="contain"/>
         <Text style={styles.welcome}>Hello again,</Text>
@@ -33,7 +26,9 @@ class Login extends Component{
           <Text style={{color:'#007bff'}}>ONLINE BANKING SIGN-IN</Text>
         </TouchableOpacity>
           <Text style={{color:'#fff', marginTop:10, fontSize:12}}>Scan a QR code (SA only)</Text>
-          <Text style={{color:'#fff', marginTop:30,fontSize:12}}>By signing in, I agree to the <Text style={{textDecorationLine:'underline'}} onPress={() => alert('T&Cs')}>{'T&Cs'}</Text></Text>
+          <Text style={{color:'#fff', marginTop:30,fontSize:12}}>By signing in, I agree to the <Text style={{textDecorationLine:'underline'}} 
+                onPress={() => alert('T&Cs')}>{'T&Cs'}</Text>
+          </Text>
           <BottomIcons  onNav={this.navigate}/>
       </ImageBackground>
     );
@@ -59,7 +54,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     marginTop: 5,
-  },
+  }
 });
 
 export { Login }
