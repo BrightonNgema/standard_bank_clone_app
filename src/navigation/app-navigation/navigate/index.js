@@ -1,6 +1,6 @@
 import { Auth } from "./auth";
 // import { OnBoarding } from "./onboarding";
-// import { Main } from "./main";
+import { Main } from "./main";
 
 
-export {Auth} 
+export { Auth, Main} 

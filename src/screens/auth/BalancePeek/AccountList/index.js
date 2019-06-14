@@ -2,9 +2,7 @@ import React from 'react'
 import { View, Text, ImageBackground, FlatList } from 'react-native';
 import { Icon } from 'native-base';
 import { icons } from 'assets';
-
 import { dummydata } from 'utils';
-
 
 const AccountsList = () => {
   return (       
@@ -19,9 +17,9 @@ const AccountsList = () => {
             </View>
             <View style={{marginBottom:20, flexDirection:'row'}}>
                 <ImageBackground 
-                  borderRadius={30}
+                  borderRadius={25}
                   source={icons.gradient} 
-                  style={{height:60, width:60, borderRadius:30, backgroundColor:'red', justifyContent:'center', alignItems:'center',}}>
+                  style={{height:50, width:50,justifyContent:'center', alignItems:'center',}}>
                   <Icon name="wallet" style={{color:'#fff'}}/>
                 </ImageBackground>
                 <View style={{flexDirection:'column',flex:1, justifyContent: 'center', marginLeft:10}}>

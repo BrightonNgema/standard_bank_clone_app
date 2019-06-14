@@ -1,3 +1,3 @@
-import {Main} from './drawer-navigation';
+import {Main} from './tab-navigation';
 
 export {Main}

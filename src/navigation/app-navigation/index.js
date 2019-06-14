@@ -5,7 +5,7 @@ import { Auth, Main} from './navigate';
   class AppNavigation extends Component {
 
     render() {
-        return <Auth />  
+        return <Main />  
       // const {isAuthenticated, isOnboarded} = this.props.user
       // if (!isAuthenticated) {
       //   return <Auth />;
