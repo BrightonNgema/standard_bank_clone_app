@@ -12,7 +12,7 @@
     "native-base": "^2.12.1",
     "navigation": "file:src/navigation",
     "react": "16.8.3",
-    "react-native": "0.59.3",
+    "react-native": "0.62.3",
     "react-navigation": "^2.3.0",
     "screens": "file:src/screens"
   },
